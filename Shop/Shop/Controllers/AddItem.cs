@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Shop.Models;
+using Shop.Data;
 
 namespace Shop.Controllers
 {
@@ -9,14 +10,13 @@ namespace Shop.Controllers
         {
             return View();
         }
-        public static List<ShopItem> Items = new List<ShopItem>();
 
         [HttpPost]
         public IActionResult NewItem(ShopItem item)
         {
             if (ModelState.IsValid)
             {
-                Items.Add(item);
+                ItemsRepository.Items.Add(item);
                 TempData["SuccessMessage"] = "محصول با موفقیت سیو شد!";
                 return RedirectToAction("NewItem");
             }

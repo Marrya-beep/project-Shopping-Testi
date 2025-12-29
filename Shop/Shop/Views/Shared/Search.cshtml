@@ -2,7 +2,7 @@
 
 <h1>جستجوی محصول</h1>
 
-<form asp-action="Search" asp-controller="SearchingProduct" method="get">
+<form asp-action="Search" asp-controller="SearchingProduct" method="post">
     <input type="text" name="query" placeholder="اسم آیتم را وارد کنید" style="padding:5px; width:250px;" />
     <button type="submit" style="padding:5px 10px;">Search</button>
 </form>
@@ -18,12 +18,13 @@
                 <p>@item.Description</p>
             </li>
         }
-        else if (!string.IsNullOrEmpty(Request.Query["query"]))
-        {
-        <p>هیچ محصولی پیدا نشد </p>
-        }
     </ul>
-    
+    }
+else if (!string.IsNullOrEmpty(Context.Request.Query["query"]))
+{
+    <p>هیچ محصولی پیدا نشد</p>
 }
+    
+
 
     

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Shop.Models;
+using Shop.Data;
 
 namespace Shop.Controllers
 {
@@ -9,7 +10,6 @@ namespace Shop.Controllers
         {
             return View();
         }
-        public static List<ShopItem> Items = AddItem.Items;
         [HttpPost]
         public IActionResult Search(string query)
         {
@@ -17,7 +17,7 @@ namespace Shop.Controllers
 
             if (!string.IsNullOrEmpty(query))
             {
-                results = Items
+                results = ItemsRepository.Items
                     .Where(x => x.Name.Contains(query, System.StringComparison.OrdinalIgnoreCase))
                     .ToList();
             }
