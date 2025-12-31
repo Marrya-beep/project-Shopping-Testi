@@ -28,3 +28,9 @@ obj/
 
 # Visual Studio
 .vs/
+# Ignore build outputs
+bin/
+obj/
+
+# Ignore Visual Studio files
+.vs/
