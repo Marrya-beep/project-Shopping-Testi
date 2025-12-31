@@ -4,6 +4,8 @@ using Shop.Models;
 
 namespace Shop.Controllers
 {
+    [ApiController]
+    [Route("api/[controller]")]
     public class ContactUs : Controller
     {
         [HttpGet]

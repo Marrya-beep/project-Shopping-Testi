@@ -3,9 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>@ViewData["Title"] - Shop</title>
-   
-
-    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
     <header>
@@ -14,11 +12,10 @@
                 <li><a asp-controller="AddItem" asp-action="NewItem">Add New Item</a></li>
                 <li><a asp-controller ="Category" asp-action="Category">Category</a></li>
                 <li><a asp-controller="SearchingProduct" asp-action="Search">Search</a></li>
-                <li><a asp-controller="ContactUs" asp-action="ContactUs">Contact Us</a></li>
+                <li><a asp-controller="ContactUs" asp-action="ContactUs">Contact Uss</a></li>
             </ul>
         </nav>
     </header>
-       
 
     <main>
         @RenderBody()
