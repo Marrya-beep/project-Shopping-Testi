@@ -9,41 +9,41 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Shopping
 build_property.RootNamespace = Shopping
-build_property.ProjectDir = C:\Users\Yalda Nadimi\source\repos\project-Shopping-Testi\Shopping\
+build_property.ProjectDir = C:\Users\Maryam\source\repos\final\Shopping\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Yalda Nadimi\source\repos\project-Shopping-Testi\Shopping
+build_property.MSBuildProjectDirectory = C:\Users\Maryam\source\repos\final\Shopping
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Yalda Nadimi/source/repos/project-Shopping-Testi/Shopping/Pages/Error.cshtml]
+[C:/Users/Maryam/source/repos/final/Shopping/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Yalda Nadimi/source/repos/project-Shopping-Testi/Shopping/Pages/Index.cshtml]
+[C:/Users/Maryam/source/repos/final/Shopping/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Yalda Nadimi/source/repos/project-Shopping-Testi/Shopping/Pages/Privacy.cshtml]
+[C:/Users/Maryam/source/repos/final/Shopping/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Yalda Nadimi/source/repos/project-Shopping-Testi/Shopping/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Maryam/source/repos/final/Shopping/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Yalda Nadimi/source/repos/project-Shopping-Testi/Shopping/Pages/_ViewImports.cshtml]
+[C:/Users/Maryam/source/repos/final/Shopping/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Yalda Nadimi/source/repos/project-Shopping-Testi/Shopping/Pages/_ViewStart.cshtml]
+[C:/Users/Maryam/source/repos/final/Shopping/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Yalda Nadimi/source/repos/project-Shopping-Testi/Shopping/Pages/Shared/_Layout.cshtml]
+[C:/Users/Maryam/source/repos/final/Shopping/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-s7b4r0qw5j

@@ -7700,11 +7700,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maryam\\source\\repos\\project-Shopping-Testi\\Shop\\Shop\\Shop.csproj",
+      "projectUniqueName": "C:\\Users\\Maryam\\source\\repos\\test\\Shop\\Shop\\Shop.csproj",
       "projectName": "Shop",
-      "projectPath": "C:\\Users\\Maryam\\source\\repos\\project-Shopping-Testi\\Shop\\Shop\\Shop.csproj",
+      "projectPath": "C:\\Users\\Maryam\\source\\repos\\test\\Shop\\Shop\\Shop.csproj",
       "packagesPath": "C:\\Users\\Maryam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maryam\\source\\repos\\project-Shopping-Testi\\Shop\\Shop\\obj\\",
+      "outputPath": "C:\\Users\\Maryam\\source\\repos\\test\\Shop\\Shop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
