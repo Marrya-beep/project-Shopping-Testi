@@ -1,31 +1,40 @@
-﻿//using Microsoft.AspNetCore.Mvc;
-//using Shop.Data;
+﻿using Microsoft.AspNetCore.Mvc;
+using Shop.Data;
 
-//namespace Shop.Controllers
-//{
-//    public class CategoryController : Controller
-//    {
-//        public IActionResult Category()
-//        {
-//            var categories = ItemsRepository.Items
-//                .Where(x => !string.IsNullOrWhiteSpace(x.Category))
-//                .Select(x => x.Category)
-//                .Distinct()
-//                .ToList();
+namespace Shop.Controllers
+{
+    public class CategoryController : Controller
+    {
+        private readonly ShopDbContext _context;
+        public CategoryController(ShopDbContext context)
+        {
+            _context = context;
+        }
+        public IActionResult Category()
+        {
+            var categories = _context.Categories
+                .Select(c => c.Name)
+                .ToList();
 
-//            return View(categories);
-//        }
-//        public IActionResult ProductsByCategory(string category)
-//        {
-//            if (string.IsNullOrEmpty(category))
-//                return RedirectToAction("Category");
+            return View(categories);
+        }
+        public IActionResult ProductsByCategory(string category)
+        {
+            if (string.IsNullOrWhiteSpace(category))
+                return RedirectToAction("Category");
 
-//            var products = ItemsRepository.Items
-//                .Where(x => x.Category.Equals(category, StringComparison.OrdinalIgnoreCase))
-//                .ToList();
+            var categoryEntity = _context.Categories
+                .FirstOrDefault(c => c.Name == category);
 
-//            ViewBag.CategoryName = category;
-//            return View(products); 
-//        }
-//    }
-//}
+            if (categoryEntity == null)
+                return RedirectToAction("Index");
+
+            var products = _context.ShopItems
+                .Where(i => i.IdCategory == categoryEntity.Id)
+                .ToList();
+
+            ViewBag.CategoryName = category;
+            return View(products);
+        }
+    }
+}

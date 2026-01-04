@@ -1,27 +1,39 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Shop.Models;
 using Shop.Data;
+using Shop.Models;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace Shop.Controllers
 {
     public class SearchingProduct : Controller
     {
+        private readonly ShopDbContext _context;
+
+        public SearchingProduct(ShopDbContext context)
+        {
+            _context = context;
+        }
+
+        [HttpGet]
         public IActionResult Search()
         {
-            return View();
+            return View(new List<ShopItem>());
         }
+
         [HttpPost]
         public IActionResult Search(string query)
         {
-            List<ShopItem> results = new List<ShopItem>();
+            var results = new List<ShopItem>();
 
-            if (!string.IsNullOrEmpty(query))
+            if (!string.IsNullOrWhiteSpace(query))
             {
-                results = ItemsRepository.Items
-                    .Where(x => x.Name.Contains(query, System.StringComparison.OrdinalIgnoreCase))
+                results = _context.ShopItems
+                    .Where(x => x.Name.Contains(query))
                     .ToList();
             }
 
+            ViewBag.Query = query;
             return View(results);
         }
     }

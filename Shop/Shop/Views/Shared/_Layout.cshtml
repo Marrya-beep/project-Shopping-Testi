@@ -12,7 +12,7 @@
                 <li><a asp-controller="AddItem" asp-action="NewItem">Add New Item</a></li>
                 <li><a asp-controller ="Category" asp-action="Category">Category</a></li>
                 <li><a asp-controller="SearchingProduct" asp-action="Search">Search</a></li>
-                <li><a asp-controller="ContactUs" asp-action="ContactUs">Contact Uss</a></li>
+                <li><a asp-controller="ContactUs" asp-action="NewMessage">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -20,6 +20,7 @@
     <main>
         @RenderBody()
     </main>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>
 

@@ -10,5 +10,6 @@ namespace Shop.Data
 
         public DbSet<ShopItem> ShopItems { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<ContactMessage> Message { get; set; }
     }
 }
