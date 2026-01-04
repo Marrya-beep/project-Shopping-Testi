@@ -1,5 +1,8 @@
-﻿namespace Shop.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Shop.Models
 {
+    [Table("ContactMessage")]
     public class ContactMessage
     {
         public int Id { get; set; }
